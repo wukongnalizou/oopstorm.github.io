@@ -2,7 +2,7 @@
 layout: pages
 title: git gradle持续集成按需构建
 date: 2018.08.31
-tags: CI
+tags: Gradle
 ---
 如题，本文将详细对git+gradle持续集成如何按需构建做一个详细说明
 
