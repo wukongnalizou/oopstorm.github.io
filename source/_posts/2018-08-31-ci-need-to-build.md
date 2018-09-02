@@ -1,6 +1,6 @@
 ---
 layout: pages
-title:git gradle持续集成按需构建
+title: git gradle持续集成按需构建
 date: 2018.08.31
 tags: CI
 ---
@@ -24,7 +24,7 @@ tags: CI
 ```
 ②一般模块化的代码应该可以通过文件路径解析出project名称
 我们的文件路径：subprojects/modelName/businessName/src/**
-modelName是模块名 
+modelName是模块名
 businessName为业务名  非必须
 若有业务名则业务名为project名称否则modelName为project名称
 ```shell
@@ -56,7 +56,7 @@ projectsStr=`gradle projects`
 projects=`echo $projectsStr|grep -P "(?<=\'\:).*?(?=\')" -o`
 needBuildModel=''
 for project in ${projects[@]}
-do 
+do
   for model in ${modelsAttr[@]}
   do      
     if [[ $project == $model ]];then
@@ -78,5 +78,3 @@ done
 ./gradlew $commandStr --scan --daemon --parallel
 ```
 这样我们就完成了按需构建的脚本，将脚本配在持续集成工具上就ok了，还有一个思路是用git提供的webhook(钩子)去获取变更列表，但是这种方案可能调用持续集成工具(jenkins,teamcity)的时候有点麻烦所以就没有探索，如果大家有思路欢迎留言，最后欢迎大家积极评论与指正。
-
-
