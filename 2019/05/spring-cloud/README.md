@@ -38,3 +38,5 @@ Spring Cloud Demo
 1. Invoke UIP login Service via 'Local' Serivce
 
   Visit http://localhost:9093/local/index
+
+1. Start old spring project in `old-spring` folder, and request to its `/simple` url
