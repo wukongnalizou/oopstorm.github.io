@@ -8,35 +8,35 @@ Spring Cloud Demo
 
 1. Start Eureka first
 
-  ```
-  $ cd eureka
-  $ ./gradlew bootRun
-  ```
+    ```
+    $ cd eureka
+    $ ./gradlew bootRun
+    ```
 
-  Visit http://localhost:9091/eureka-server/
+    Visit http://localhost:9091/eureka-server/
 
 1. Start 'Gmt' and 'Local' services
 
-  ```
-  $ cd gmt
-  $ ./gradlew bootRun
-  ```
+    ```
+    $ cd gmt
+    $ ./gradlew bootRun
+    ```
 
-  Visit http://localhost:9092/gmt/
+    Visit http://localhost:9092/gmt/
 
-  ```
-  $ cd local
-  $ ./gradlew bootRun
-  ```
+    ```
+    $ cd local
+    $ ./gradlew bootRun
+    ```
 
-  Visit http://localhost:9093/local/
+    Visit http://localhost:9093/local/
 
 1. Invoke Pep Logo Service via 'Local' Service
 
-  Visit http://localhost:9093/local/logo
+    Visit http://localhost:9093/local/logo
 
 1. Invoke UIP login Service via 'Local' Serivce
 
-  Visit http://localhost:9093/local/index
+    Visit http://localhost:9093/local/index
 
 1. Start old spring project in `old-spring` folder, and request to its `/simple` url
