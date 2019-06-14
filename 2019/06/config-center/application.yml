@@ -7,4 +7,5 @@ eureka:
     service-url:
       defaultZone: http://localhost:9091/discovery-service/eureka
   instance:
-    hostname: ${spring.application.name}
+    # Must has hostname or edge service may NPE
+    hostname: localhost
