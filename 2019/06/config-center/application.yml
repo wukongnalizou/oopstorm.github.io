@@ -1,7 +1,7 @@
 logging:
   level:
     org.springframework.cloud: DEBUG
-    org.springframework: DEBUG
+    org.springframework: INFO
 
 eureka:
   client:
@@ -10,3 +10,11 @@ eureka:
   instance:
     # Must has hostname or edge service may NPE
     hostname: localhost
+
+spring:
+  rabbitmq:
+    host: 192.168.1.189
+    username: pep_stomp
+    password: 123456
+    port: 5675
+    virtual-host: /
