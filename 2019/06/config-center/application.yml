@@ -2,6 +2,7 @@ logging:
   level:
     org.springframework.cloud: DEBUG
     org.springframework: INFO
+    com.proper: DEBUG
 
 eureka:
   client:
