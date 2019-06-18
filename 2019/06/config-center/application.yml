@@ -6,7 +6,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9091/discovery-service/eureka
+      defaultZone: http://localhost:9091/eureka
   instance:
     # Must has hostname or edge service may NPE
     hostname: localhost
