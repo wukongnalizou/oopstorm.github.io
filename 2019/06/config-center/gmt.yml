@@ -3,4 +3,4 @@ logging:
     org.springframework: DEBUG
 
 gmt:
-  name: hexin
+  name: hx
